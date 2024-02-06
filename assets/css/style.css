@@ -18887,7 +18887,7 @@ body.coming-soon {
 }
 .single-service-card-box-1 .check-area-wrapper .single-check-area {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 12px;
   margin-bottom: 7px;
 }
@@ -22689,6 +22689,14 @@ main {
 }
 .single-approach-area-start.three::after {
   content: "03" !important;
+}
+
+.single-approach-area-start.four::after {
+  content: "04" !important;
+}
+
+.single-approach-area-start.five::after {
+  content: "05" !important;
 }
 .single-approach-area-start.three::before {
   background-image: url(../images/banner/25.jpg);
