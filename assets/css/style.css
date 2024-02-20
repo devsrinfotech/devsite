@@ -50,7 +50,7 @@
 
 ========================================*/
 /* Default  */
-@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;200;300;400;500;600;700;800;900&amp;display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
 :root {
   --color-primary: #141414;
   --color-secondary: #1F1F25;
@@ -85,8 +85,8 @@
   --s-extra-bold: 800;
   --s-black: 900;
   --transition: 0.3s;
-  --font-primary: "Hanken Grotesk", sans-serif;
-  --font-secondary: "Hanken Grotesk", sans-serif;
+  --font-primary: "Red Hat Display", sans-serif;
+  --font-secondary: "Red Hat Display", sans-serif;
   --font-3: "fontawesome", sans-serif;
   --font-size-b1: 16px;
   --font-size-b2: 16px;
@@ -121,7 +121,7 @@ body {
   line-height: var(--line-height-b1);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Hanken Grotesk", sans-serif;
+  font-family: "Red Hat Display", sans-serif;
   color: var(--color-body);
   font-weight: var(--p-regular);
   position: relative;
@@ -191,7 +191,7 @@ h6,
 .h5,
 .h6 {
   word-break: break-word;
-  font-family: "Hanken Grotesk", sans-serif;
+  font-family: "Red Hat Display", sans-serif;
   line-height: 1.4074;
   color: var(--color-heading-1);
 }
@@ -349,6 +349,10 @@ p {
   color: var(--color-body);
   margin: 0 0 40px;
 }
+
+strong{
+  color: #000;
+}
 @media only screen and (max-width: 767px) {
   p {
     margin: 0 0 20px;
@@ -438,7 +442,7 @@ cite,
 }
 
 var {
-  font-family: "Hanken Grotesk", sans-serif;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 /*---------------------------
@@ -656,7 +660,7 @@ color: white !important;
 }
 
 .rts-section-gap {
-  padding: 150px 0;
+  padding: 101px 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .rts-section-gap {
@@ -14735,7 +14739,7 @@ nav.nav-area ul li a {
   width: 100%;
 }
 .rts-header-area-two.header--sticky.sticky .header-top-two {
-  border-bottom: 1px solid #3b3b3b !important;
+  border-bottom: 1px solid #ffffff !important;
 }
 .rts-header-area-two .header-top-two {
   display: flex;
@@ -15149,7 +15153,7 @@ header.header-four .nav-area .navbar-nav-1 .menu-item .mega-menu-01.sub-menu .si
 }
 .banner-wrapper-seven p.disc {
   color: #74787C;
-  font-family: Hanken Grotesk;
+  font-family: Red Hat Display;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -15323,7 +15327,7 @@ header.header-four .nav-area .navbar-nav-1 .menu-item .mega-menu-01.sub-menu .si
   display: block;
   width: 100%;
   box-shadow: 0px 7px 18px #1810100d;
-  background: #1e1e1e;
+  background: #4184fa;
   z-index: 1002;
   margin: auto;
   display: flex;
@@ -15374,6 +15378,7 @@ header.header-four .nav-area .navbar-nav-1 .menu-item .mega-menu-01.sub-menu .si
 
 .rts-header-area-two.header--sticky.sticky {
   position: fixed !important;
+  background: #4184fa !important;
 }
 
 @media only screen and (max-width: 767px) {
@@ -15761,7 +15766,7 @@ header.header-four .nav-area .navbar-nav-1 .menu-item .mega-menu-01.sub-menu .si
 }
 .banner-content-wrapper-three .title span {
   color: #FFF;
-  font-family: Hanken Grotesk;
+  font-family: Red Hat Display;
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
@@ -16331,7 +16336,7 @@ header.header-four .nav-area .navbar-nav-1 .menu-item .mega-menu-01.sub-menu .si
 .banner-area-five-wrapper .title {
   margin-top: 80px;
   color: #FFF;
-  font-family: Hanken Grotesk;
+  font-family: Red Hat Display;
   font-size: 140px;
   font-style: normal;
   font-weight: 600;
@@ -18842,7 +18847,7 @@ body.coming-soon {
 }
 
 .single-service-card-box-1 {
-  background: #F6F6F6;
+  background: #f7faff;
   padding: 50px;
   position: relative;
   height: 100%;
@@ -18862,7 +18867,7 @@ body.coming-soon {
   position: absolute;
   right: 54px;
   top: 34px;
-  font-family: Hanken Grotesk;
+  font-family: Red Hat Display;
   font-size: 80px;
   font-style: normal;
   font-weight: 700;
@@ -24256,7 +24261,7 @@ main {
 }
 .title-faq-4 .title {
   color: #141414;
-  font-family: Hanken Grotesk;
+  font-family: Red Hat Display;
   font-size: 48px;
   font-style: normal;
   font-weight: 600;
@@ -24371,7 +24376,7 @@ main {
 }
 .appoinment-area-two .title-area-appoinment span.pre {
   color: #141414;
-  font-family: Hanken Grotesk;
+  font-family: Red Hat Display;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -24991,7 +24996,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
   border-radius: 3px;
   background: rgba(2, 2, 2, 0.05);
   color: #141414;
-  font-family: Hanken Grotesk;
+  font-family: Red Hat Display;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -25030,7 +25035,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
 .rts-cta-4-area .cta-main-wrapper .title {
   color: #FFF;
   text-align: right;
-  font-family: Hanken Grotesk;
+  font-family: Red Hat Display;
   font-size: 72px;
   font-style: normal;
   font-weight: 600;
@@ -26573,7 +26578,7 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: Hanken Grotesk;
+  font-family: Red Hat Display;
   font-size: 140px;
   font-style: normal;
   font-weight: 500;

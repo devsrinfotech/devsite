@@ -2325,7 +2325,7 @@
             $("#loading-screen .loading-counter").text(percentage + "%");
             $("#loading-screen .bar").css("height", (100 - percentage) / 2 + "%");
             $("#loading-screen .progress-line").css("transform", "scale(" + percentage / 100 + ")");
-            percentage++;
+            percentage = percentage + 10;
           } else {
             // The preloader reached 100% completion, start the animation here
 
