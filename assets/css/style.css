@@ -351,7 +351,7 @@ p {
 }
 
 strong{
-  color: #000;
+  color: #4184fa;
 }
 @media only screen and (max-width: 767px) {
   p {
@@ -15486,7 +15486,7 @@ header.header-four .nav-area .navbar-nav-1 .menu-item .mega-menu-01.sub-menu .si
 }
 
 .banner-one-wrapper .title {
-  color: #0046c7;
+  color: #4184fa;
   font-weight: 600;
   font-size: 90px;
   line-height: 100px;
@@ -15547,7 +15547,7 @@ header.header-four .nav-area .navbar-nav-1 .menu-item .mega-menu-01.sub-menu .si
   }
 }
 .banner-one-wrapper .title .border-bottom-1 {
-  color: #ffc107;
+  color: #4184fa;
 }
 .banner-one-wrapper .para-wraph {
   position: absolute;
@@ -16430,7 +16430,7 @@ h2 div {
   top: 50%;
   transform: translate(-50%, -50%);
   font-size: 30px;
-  color: #ffc107;
+  color: #4184fa;
 }
 .banner-area.banner-style-one .top-center-image .uni-animation-spin {
   display: inline-flex;
@@ -18851,6 +18851,11 @@ body.coming-soon {
   padding: 50px;
   position: relative;
   height: 100%;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.single-service-card-box-1:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 @media only screen and (max-width: 1199px) {
   .single-service-card-box-1 {
@@ -22731,7 +22736,7 @@ main {
   left: 0;
 }
 .single-approach-area-start:hover .title::before {
-  font-size: 22px;
+  /* font-size: 22px; */
   right: -35px;
   opacity: 1;
 }
@@ -22813,7 +22818,7 @@ main {
 
 .main-wrapper-case-studies .title {
   font-weight: 800;
-  font-size: 200px;
+  font-size: 150px;
   line-height: 210px;
   color: #fff;
   text-transform: uppercase;
@@ -23002,6 +23007,17 @@ main {
   height: 40px;
   border-radius: 50%;
   background: #1B1B1B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.rts-social-area-one ul li a:hover {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #4184fa;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27944,10 +27960,10 @@ body.servi-ce-details .rts-footer-two-area {
   display: none;
 }
 
-.rts-light-mood.rts-dark .modal-sidebar-scroll .go-light-w {
+.rts-light-mood .rts-dark .modal-sidebar-scroll .go-light-w {
   display: block;
 }
-.rts-light-mood.rts-dark .modal-sidebar-scroll .go-dark-w {
+.rts-light-mood .rts-dark .modal-sidebar-scroll .go-dark-w {
   display: none;
 }
 
@@ -28674,6 +28690,10 @@ body.servi-ce-details .rts-footer-two-area {
 }
 .rts-dark .single-service-card-box-1 {
   background: #121212;
+}
+
+.rts-dark .single-service-card-box-1:hover {
+  box-shadow: 0 0 30px rgba(247, 247, 247, 0.589);
 }
 .rts-dark .single-service-card-box-1 .icon svg path {
   fill: #fff;
