@@ -16646,6 +16646,13 @@ h2 div {
     height: 400px;
   }
 }
+
+.column-title{
+  text-align: center;
+}
+.column-title span{
+ color: #4285fa;
+}
 @media (max-width: 768px) {
   .rts-breadcrumb-area {
     height: auto;
@@ -18866,6 +18873,8 @@ body.coming-soon {
   position: relative;
   height: 100%;
   transition: box-shadow 0.3s ease-in-out;
+  display: inline-grid;
+  align-content: space-between;
 }
 
 .inner-service-card-box-1 {
@@ -18922,7 +18931,7 @@ padding-top:10px
 }
 
 .rts-dark .inner-service-card-box-1 {
-  background: #1e1e1e;
+  background: #4a4a4a;
 }
 
 .rts-dark .inner-service-card-box-1:hover {
