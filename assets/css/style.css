@@ -647,6 +647,18 @@ color: white !important;
   margin-bottom: 0;
 }
 
+.column-content {
+  text-align: justify;
+}
+
+@media screen and (min-width: 768px) {
+  .column-content {
+    padding: 0px 100px 0px 30px;
+   
+  }
+  
+}
+
 .mb_dec--25 {
   margin-bottom: -25px;
 }
@@ -688,7 +700,7 @@ color: white !important;
 }
 
 .rts-section-gapTop {
-  padding-top: 150px;
+  padding-top: 50px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .rts-section-gapTop {
@@ -16657,6 +16669,7 @@ h2 div {
   font-size: 100px;
   font-style: normal;
   font-weight: 500;
+  padding-top: 30px;
   line-height: normal;
 }
 @media (max-width: 1400px) {
@@ -17951,7 +17964,7 @@ body.coming-soon {
   transition: 0.3s;
 }
 .rts-btn.btn-white:hover {
-  background: #141414;
+  background: #545454;
   color: #fff !important;
 }
 .rts-btn.btn-white.btn-md {
@@ -18016,7 +18029,7 @@ body.coming-soon {
   line-height: 26px;
   text-transform: uppercase;
   color: #ffff;
-  border: 1px solid #ffc107  !important;
+  border: 1px solid #4181f3  !important;
   border-radius: 100%;
   position: relative;
   overflow: hidden;
@@ -18909,7 +18922,7 @@ padding-top:10px
 }
 
 .rts-dark .inner-service-card-box-1 {
-  background: #121212;
+  background: #1e1e1e;
 }
 
 .rts-dark .inner-service-card-box-1:hover {
