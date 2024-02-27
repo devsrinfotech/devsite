@@ -51,6 +51,9 @@
 ========================================*/
 /* Default  */
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
   --color-primary: #141414;
   --color-secondary: #1F1F25;
@@ -17960,8 +17963,8 @@ body.coming-soon {
   font-size: 20px;
 }
 .rts-btn.btn-white {
-  background: #fff;
-  color: #141414;
+  background: #07304c;
+  color: #fff;
   padding: 14px 44px;
   text-transform: uppercase;
   font-weight: 700;
@@ -17971,12 +17974,13 @@ body.coming-soon {
   transition: 0.3s;
 }
 .rts-btn.btn-white:hover {
-  background: #545454;
+  background: #535353;
   color: #fff !important;
 }
 .rts-btn.btn-white.btn-md {
   padding: 13px 26px;
   font-size: 16px;
+  font-family: "Montserrat", sans-serif;
 }
 .rts-btn.btn-white.btn-lg {
   padding: 16px 30px;
@@ -18858,6 +18862,10 @@ body.coming-soon {
   color: #000000;
 }
 
+.pad-150{
+  padding-top:150px;
+}
+
 .rts-service-area.three {
   position: relative;
 }
@@ -18873,7 +18881,7 @@ body.coming-soon {
   position: relative;
   height: 100%;
   transition: box-shadow 0.3s ease-in-out;
-  display: inline-grid;
+  display: grid;
   align-content: space-between;
 }
 
@@ -18884,8 +18892,8 @@ body.coming-soon {
   border-radius: 20px;
   height: 100%;
   transition: box-shadow 0.3s ease-in-out;
-  display: inline-grid;
-  align-content: space-between;
+  /* display: inline-grid;
+  align-content: space-between; */
 
 }
 
