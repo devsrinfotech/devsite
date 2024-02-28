@@ -56,7 +56,7 @@
                             <nav class="nav-area drop-down-rts">
                                 <ul class="navbar-nav-1">
                                     <li class="menu-item main-nav-on">
-                                        <a href="#"><span class="rolling-text">Home</span></a>
+                                        <a href="index.html"><span class="rolling-text">Home</span></a>
 
 
                                         <ul class="" style="display: block;">
@@ -641,12 +641,39 @@
                                 </h5>
                             </div>
                             <div class="wized-body">
-                                <form class="service-details-form" action="#">
-                                    <input type="text" placeholder="Your name">
-                                    <input type="text" placeholder="Phone number">
-                                    <textarea placeholder="Message"></textarea>
-                                    <button>Start Project</button>
+                                <form id="ecom-marketing-form" class="service-details-form" onsubmit="submitForm(event);">
+                                    <input id="name" type="text" placeholder="Your name" required>
+                                    <input id="mobile_number" type="tel" placeholder="Phone number" required>
+                                    <input id="email" type="email" placeholder="Your Email" required>
+                                    <textarea id="message" placeholder="Message"></textarea>
+                                    <button type="submit">Send</button>
                                 </form>
+                                <script>
+                                    async function submitForm(params) {
+                                        event.preventDefault();
+
+                                        var formdata = await new FormData();
+                                        formdata.append("name", document.getElementById('name').value,);
+                                        formdata.append("email_id", document.getElementById('email').value);
+                                        formdata.append("mobile_number", document.getElementById('mobile_number').value);
+                                        formdata.append("message", document.getElementById('message').value);
+                                        formdata.append("organization", "");
+                                        formdata.append("company_website", "");
+                                        formdata.append("service", "");
+                                        formdata.append("click_location", "E-commerce Marketing Page Form");
+
+
+                                        await fetch('https://mycrm.srinfotech.biz/api/method/erpnext.product_request.doctype.sr_website_leads.sr_website_leads.save_form', {
+                                            method: 'POST',
+                                            body: formdata,
+                                            mode: 'no-cors',
+                                        });
+
+                                        var form = document.getElementById('ecom-marketing-form');
+                                        form.reset();
+                                        alert('Form Submitted Successfully');
+                                    }
+                                </script>
                             </div>
                         </div>
 

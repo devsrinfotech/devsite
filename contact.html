@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="assets/css/plugins/animate.min.css">
     <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <script src="https://www.google.com/recaptcha/api.js?render=6LeLyiEnAAAAAGKq4oVVHOun-sJABia4uWbj4Lcv"></script> -->
 </head>
 
 <body class="inner-page contact-page">
@@ -55,7 +56,7 @@
                             <nav class="nav-area drop-down-rts">
                                 <ul class="navbar-nav-1">
                                     <li class="menu-item main-nav-on">
-                                        <a href="#"><span class="rolling-text">Home</span></a>
+                                        <a href="index.html"><span class="rolling-text">Home</span></a>
 
 
                                         <ul class="" style="display: block;">
@@ -73,7 +74,8 @@
                                             <li class="menu-item menu-item-home"><a class="menu-link"
                                                     href="social-media-marketing.html">Social Media Marketing </a></li>
                                             <li class="menu-item menu-item-home"><a class="menu-link"
-                                                    href="search-engine-optimization.html">Search Engine Optimization</a></li>
+                                                    href="search-engine-optimization.html">Search Engine
+                                                    Optimization</a></li>
                                             <li class="menu-item menu-item-home"><a class="menu-link"
                                                     href="email-marketing.html">Email Marketing </a></li>
                                             <li class="menu-item menu-item-home"><a class="menu-link"
@@ -81,7 +83,8 @@
                                             <li class="menu-item menu-item-home"><a class="menu-link"
                                                     href="brand-and-identity.html">Branding and Identity</a></li>
                                             <li class="menu-item menu-item-home"><a class="menu-link"
-                                                    href="web-design-and-development.html">Web Design and Development</a></li>
+                                                    href="web-design-and-development.html">Web Design and
+                                                    Development</a></li>
 
                                         </ul>
 
@@ -96,7 +99,7 @@
                                             <li class="menu-item menu-item-home"><a class="menu-link"
                                                     href="pms.html">PMS </a></li>
                                         </ul>
-        
+
                                     </li>
 
                                     <li class="menu-item main-nav-on">
@@ -159,7 +162,7 @@
                                     </div>
                                     <div class="rts-fs-menu">
                                         <div class="rts-fs-container row">
-    
+
                                             <div class="rts-fs--nav col-12 col-md-6">
                                                 <ul id="primary-menu" class="navbar-nav-button">
                                                     <li class="menu-item"><a href="index.html">home</a></li>
@@ -185,13 +188,16 @@
                                                                 <a href="email-marketing.html">Email Marketing</a>
                                                             </li>
                                                             <li class="menu-item">
-                                                                <a href="ecommerce-marketing.html">E-commerce Marketing</a>
+                                                                <a href="ecommerce-marketing.html">E-commerce
+                                                                    Marketing</a>
                                                             </li>
                                                             <li class="menu-item">
-                                                                <a href="brand-and-identity.html">Branding and Identity</a>
+                                                                <a href="brand-and-identity.html">Branding and
+                                                                    Identity</a>
                                                             </li>
                                                             <li class="menu-item">
-                                                                <a href="web-design-and-development.html">Web Design and Development</a>
+                                                                <a href="web-design-and-development.html">Web Design and
+                                                                    Development</a>
                                                             </li>
                                                         </ul>
                                                     </li>
@@ -199,7 +205,7 @@
                                                     <li class="menu-item"><a href="contact.html">Contact Us</a></li>
                                                 </ul>
                                             </div>
-    
+
                                             <div class="rts-fs--contacts col-12 col-md-6">
                                                 <div class="contact-inner">
                                                     <div class="contact-information">
@@ -211,7 +217,7 @@
                                                                         Bengaluru -560078. India</p>
                                                                 </li>
                                                                 <li>
-    
+
                                                                 </li>
                                                             </ul>
                                                         </div>
@@ -229,22 +235,26 @@
                                                         </div>
                                                         <div class="rts-social-area-one">
                                                             <ul>
-                                                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                                                <li><a href="#"><i
+                                                                            class="fa-brands fa-facebook-f"></i></a>
                                                                 </li>
                                                                 <li><a href="#"><i class="fa-brands fa-twitter"></i></a>
                                                                 </li>
-                                                                <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                                                <li><a href="#"><i
+                                                                            class="fa-brands fa-whatsapp"></i></a>
                                                                 </li>
-                                                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                                                <li><a href="#"><i
+                                                                            class="fa-brands fa-instagram"></i></a>
                                                                 </li>
-                                                                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                                                <li><a href="#"><i
+                                                                            class="fa-brands fa-linkedin"></i></a>
                                                                 </li>
                                                             </ul>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-    
+
                                         </div>
                                     </div>
                                 </div>
@@ -294,48 +304,50 @@
                                 <span>Get in touch!</span>
                             </h2>
                         </div>
-                        <form class="appoinment-h2 rts-slide-up-gsap" action="#">
+                        <form id="contactForm" class="appoinment-h2 rts-slide-up-gsap" onsubmit="submitForm(event); ">
                             <div class="input-line">
                                 <div class="input-half">
                                     <label for="name">Your Name*</label>
                                     <input id="name" type="text" placeholder="Your Name" required>
                                 </div>
                                 <div class="input-half">
-                                    <label for="email">Your Work Email*</label>
+                                    <label for="">Your Work Email*</label>
                                     <input id="email" type="email" placeholder="you@yourcompany.com" required>
                                 </div>
                             </div>
                             <div class="input-line mt--40">
                                 <div class="input-half">
-                                    <label for="name">Your Mobile Number*</label>
-                                    <input id="name" type="text" placeholder="Your Number" required>
+                                    <label for="mobile_number">Your Mobile Number*</label>
+                                    <input id="mobile_number" type="tel" placeholder="Your Number" required>
                                 </div>
                                 <div class="input-half">
-                                    <label for="email">Organization Name*</label>
-                                    <input id="email" type="text" placeholder="Company Name" required>
+                                    <label for="organization">Organization Name*</label>
+                                    <input id="organization" type="text" placeholder="Company Name" required>
                                 </div>
                             </div>
                             <div class="input-line mt--40">
                                 <div class="input-half">
-                                    <label for="email">Company Website</label>
-                                    <input id="email" type="text" placeholder="Company Website">
+                                    <label for="company_website">Company Website</label>
+                                    <input id="company_website" type="text" placeholder="Company Website">
                                 </div>
                                 <div class="input-half">
-                                    <label for="email">Select Service*</label>
-                                    <select class="form-select" aria-label="Default select example" required>
-                                        <option selected>CRM</option>
-                                        <option value="1">PMS</option>
-                                        <option value="2">HRM</option>
-                                        <option value="3">Mail Marketing</option>
+                                    <label for="service">Select Service*</label>
+                                    <select id="service" class="form-select" aria-label="Default select example"
+                                        required>
+                                        <option selected>Digital Marketing</option>
+                                        <option value="Branding">Branding</option>
+                                        <option value="Website Development">Website Development</option>
+                                        <option value="App Development">App Development</option>
+                                        <option value="CRM">CRM</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="text-area mt--40">
                                 <label for="message">Message</label>
                                 <textarea id="message" cols="30" rows="10"
-                                    placeholder="Let tell us about your Requirements"></textarea>
+                                    placeholder="Tell us about your Requirements"></textarea>
                             </div>
-                            <button class="submit-pd">Post Comment</button>
+                            <button type="submit" class="submit-pd">Send </button>
                         </form>
                     </div>
                     <!-- appoinment area two end -->
@@ -357,9 +369,10 @@
                         <!-- footer left start -->
                         <div class="footer-left-two">
                             <a href="index.html" class="logo">
-                                <img style="max-width: 60%;" src="assets/images/logo/SR_Ver1_wh.png" alt="sr infotech logo">
+                                <img style="max-width: 60%;" src="assets/images/logo/SR_Ver1_wh.png"
+                                    alt="sr infotech logo">
                             </a>
-                            
+
                             <div class="rts-social-area-one">
                                 <ul>
                                     <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -387,12 +400,12 @@
                             <h5 class="title">Contact Info</h5>
                             <div class="mail-contact-area">
                                 <div class="single-con-info mb--40">
-                                    <a href="#" style="color: rgb(156, 156, 156);" >
-                                        #62, 6th main road, JP Nagar, 7th phase, Bengaluru -560078. India
+                                    <a href="#" style="color: rgb(156, 156, 156);">
+                                        #62, 6th main road, JP Nagar, 7th phase, <br> Bengaluru -560078. <br> India
                                     </a>
                                 </div>
                                 <div class="single-con-info mail">
-                                    <a href="mailto:info@srinfotech.biz" style="color:rgb(156, 156, 156);white;">
+                                    <a href="mailto:info@srinfotech.biz" style="color:rgb(156, 156, 156);">
                                         info@srinfotech.biz
                                     </a>
                                 </div>
@@ -468,7 +481,63 @@
     <!-- dark light switcher end -->
 
 
+    <script>
+        async function submitForm(event) {
+            event.preventDefault();
+            const urlParams = new URLSearchParams(window.location.search);
 
+            const click_location = urlParams.get('cl') ?? "Contact Page";
+            console.log(click_location);
+
+            var formdata = await new FormData();
+            formdata.append("name", document.getElementById('name').value,);
+            formdata.append("email_id", document.getElementById('email').value);
+            formdata.append("mobile_number", document.getElementById('mobile_number').value);
+            formdata.append("organization", document.getElementById('organization').value);
+            formdata.append("company_website", document.getElementById('company_website').value);
+            formdata.append("service", document.getElementById('service').value);
+            formdata.append("message", document.getElementById('message').value);
+            formdata.append("click_location", click_location);
+
+
+            await fetch('https://mycrm.srinfotech.biz/api/method/erpnext.product_request.doctype.sr_website_leads.sr_website_leads.save_form', {
+                method: 'POST',
+                body: formdata,
+                mode: 'no-cors',
+            });
+
+            var form = document.getElementById('contactForm');
+            form.reset();
+            alert('Form Submitted Successfully');
+
+            // grecaptcha.ready( function () {
+            //     grecaptcha.execute('reCAPTCHA_site_key', { action: 'submit' }).then(async function (token) {
+            //         const urlParams = new URLSearchParams(window.location.search);
+            //         console.log(token);
+            //         const click_location = urlParams.get('cl') ?? "missing";
+
+            //         var formdata = await new FormData();
+            //         formdata.append("name", document.getElementById('name').value,);
+            //         formdata.append("email_id", document.getElementById('email').value);
+            //         formdata.append("mobile_number", document.getElementById('mobile_number').value);
+            //         formdata.append("organization", document.getElementById('organization').value);
+            //         formdata.append("company_website", document.getElementById('company_website').value);
+            //         formdata.append("service", document.getElementById('service').value);
+            //         formdata.append("message", document.getElementById('message').value);
+            //         formdata.append("click_location", click_location);
+
+            //         console.log(formdata);
+            //         await fetch('https://mycrm.srinfotech.biz/api/method/erpnext.product_request.doctype.sr_website_leads.sr_website_leads.save_form', {
+            //             method: 'POST',
+            //             body: formdata
+            //         });
+            //     });
+            // });
+
+
+        }
+
+    </script>
     <script defer src="assets/js/vendor/jquery.min.js"></script>
     <script defer src="assets/js/plugins/bootstrap.min.js"></script>
     <script defer src="assets/js/plugins/contact.form.js"></script>

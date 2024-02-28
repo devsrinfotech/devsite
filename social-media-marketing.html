@@ -69,7 +69,8 @@
                                             <li class="menu-item menu-item-home"><a class="menu-link"
                                                     href="social-media-marketing.html">Social Media Marketing </a></li>
                                             <li class="menu-item menu-item-home"><a class="menu-link"
-                                                    href="search-engine-optimization.html">Search Engine Optimization</a></li>
+                                                    href="search-engine-optimization.html">Search Engine
+                                                    Optimization</a></li>
                                             <li class="menu-item menu-item-home"><a class="menu-link"
                                                     href="email-marketing.html">Email Marketing </a></li>
                                             <li class="menu-item menu-item-home"><a class="menu-link"
@@ -77,7 +78,8 @@
                                             <li class="menu-item menu-item-home"><a class="menu-link"
                                                     href="brand-and-identity.html">Branding and Identity</a></li>
                                             <li class="menu-item menu-item-home"><a class="menu-link"
-                                                    href="web-design-and-development.html">Web Design and Development</a></li>
+                                                    href="web-design-and-development.html">Web Design and
+                                                    Development</a></li>
 
                                         </ul>
 
@@ -92,7 +94,7 @@
                                             <li class="menu-item menu-item-home"><a class="menu-link"
                                                     href="pms.html">PMS </a></li>
                                         </ul>
-        
+
                                     </li>
                                     <li class="menu-item main-nav-on">
                                         <a href="blogs.html"><span class="rolling-text">Blogs</span></a>
@@ -532,7 +534,7 @@
                                                         on Instagram.
                                                     </p>
                                                 </div>
-                                                <a href="#get-quote" class="rts-btn btn-white btn-md">Get Quote <i
+                                                <a href="contact.html?cl=Social Media Marketing instagram" target="_blank" class="rts-btn btn-white btn-md">Get Quote <i
                                                         class="fa-light fa-arrow-right"></i></a>
 
 
@@ -567,7 +569,7 @@
 
                                                 </div>
 
-                                                <a href="#get-quote" class="rts-btn btn-white btn-md">Get Quote <i
+                                                <a href="contact.html?cl=Social Media Marketing facebook" target="_blank" class="rts-btn btn-white btn-md">Get Quote <i
                                                         class="fa-light fa-arrow-right"></i></a>
 
 
@@ -604,7 +606,7 @@
                                                     </p>
                                                 </div>
 
-                                                <a href="#get-quote" class="rts-btn btn-white btn-md">Get Quote <i
+                                                <a href="contact.html?cl=Social Media Marketing linkedin" target="_blank" class="rts-btn btn-white btn-md">Get Quote <i
                                                         class="fa-light fa-arrow-right"></i></a>
 
 
@@ -746,12 +748,39 @@
                                 </h5>
                             </div>
                             <div class="wized-body">
-                                <form class="service-details-form" action="#">
-                                    <input type="text" placeholder="Your name">
-                                    <input type="text" placeholder="Phone number">
-                                    <textarea placeholder="Message"></textarea>
-                                    <button>Start Project</button>
+                                <form id="smm-form" class="service-details-form" onsubmit="submitForm(event);">
+                                    <input id="name" type="text" placeholder="Your name" required>
+                                    <input id="mobile_number" type="tel" placeholder="Phone number" required>
+                                    <input id="email" type="email" placeholder="Your Email" required>
+                                    <textarea id="message" placeholder="Message"></textarea>
+                                    <button type="submit">Send</button>
                                 </form>
+                                <script>
+                                    async function submitForm(params) {
+                                        event.preventDefault();
+
+                                        var formdata = await new FormData();
+                                        formdata.append("name", document.getElementById('name').value,);
+                                        formdata.append("email_id", document.getElementById('email').value);
+                                        formdata.append("mobile_number", document.getElementById('mobile_number').value);
+                                        formdata.append("organization", "");
+                                        formdata.append("company_website", "");
+                                        formdata.append("service", "");
+                                        formdata.append("message", document.getElementById('message').value);
+                                        formdata.append("click_location", "Social Media Marketing Page Form");
+
+
+                                        await fetch('https://mycrm.srinfotech.biz/api/method/erpnext.product_request.doctype.sr_website_leads.sr_website_leads.save_form', {
+                                            method: 'POST',
+                                            body: formdata,
+                                            mode: 'no-cors',
+                                        });
+
+                                        var form = document.getElementById('smm-form');
+                                        form.reset();
+                                        alert('Form Submitted Successfully');
+                                    }
+                                </script>
                             </div>
                         </div>
                         <div class="rts-single-wized Categories">
