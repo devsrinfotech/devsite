@@ -25890,6 +25890,13 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
   transform: translateY(-3px);
 }
 
+
+.rts-single-wized  .single-categories:hover a {
+  background: #4184fa !important;
+  color: #fff  !important;
+  transform: translateY(-3px);
+}
+
 .rts-single-wized .single-categories li {
   list-style: none;
 }
