@@ -22790,9 +22790,6 @@ main {
   content: "03" !important;
 }
 
-.single-approach-area-start.four::before {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),url(../images/banner/EXECUTION.png);
-}
 
 .single-approach-area-start.four::after {
   content: "04" !important;
@@ -22803,8 +22800,13 @@ main {
 }
 
 .single-approach-area-start.four::before {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),url(../images/banner/EXECUTION.png);
+}
+
+.single-approach-area-start.five:hover::before {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),url(../images/banner/DELIVERING\ RESULTS.png);
 }
+
 
 .single-approach-area-start.three::before {
   background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url(../images/banner/CREATIVES.png);
