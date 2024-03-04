@@ -22783,10 +22783,15 @@ main {
   content: "02" !important;
 }
 .single-approach-area-start.two::before {
-  background-image: url(../images/banner/24.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),url(../images/banner/STRATEGIC\ PLANNING.png);
 }
+
 .single-approach-area-start.three::after {
   content: "03" !important;
+}
+
+.single-approach-area-start.four::before {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),url(../images/banner/EXECUTION.png);
 }
 
 .single-approach-area-start.four::after {
@@ -22796,11 +22801,16 @@ main {
 .single-approach-area-start.five::after {
   content: "05" !important;
 }
+
+.single-approach-area-start.four::before {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),url(../images/banner/DELIVERING\ RESULTS.png);
+}
+
 .single-approach-area-start.three::before {
-  background-image: url(../images/banner/25.jpg);
+  background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url(../images/banner/CREATIVES.png);
 }
 .single-approach-area-start::before {
-  background-image: url(../images/banner/03.png);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),url(../images/banner/RESEARCH.png);
   background-color: transparent;
   background-repeat: no-repeat;
   background-size: cover;
@@ -25890,6 +25900,11 @@ section.svg-container:nth-last-of-type(0) svg.radial-progress {
   transform: translateY(-3px);
 }
 
+.rts-dark .title-area-four-w . {
+ color: #000 !important;  
+}
+
+
 
 .rts-single-wized  .single-categories:hover a {
   background: #4184fa !important;
@@ -28713,8 +28728,8 @@ body.servi-ce-details .rts-footer-two-area {
 .rts-dark .appoinment-area-two .title-area-appoinment span.pre,
 .rts-dark .appoinment-h2 label,
 .rts-dark .about-content-inner-4 .title,
-.rts-dark .title-area-four-w .title,
-.rts-dark .title-area-four-w .pre,
+
+
 .rts-dark .title-faq-4 .title,
 .rts-dark .four-accordion-area-faq .accordion-item .accordion-header button,
 .rts-dark .blog-title-area-h4 .title,
