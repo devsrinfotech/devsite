@@ -28759,7 +28759,7 @@ body.servi-ce-details .rts-footer-two-area {
   fill: #fff;
 }
 .rts-dark .single-service-card-box-1 .right-icon {
-  color: #9f9f9f7d;
+  color: #d9d9d9;
 }
 .rts-dark .single-service-card-box-1 .plus-btn i {
   color: #000000;
@@ -28801,7 +28801,11 @@ body.servi-ce-details .rts-footer-two-area {
   border: none !important;
 }
 .rts-dark .single-service-card-box-1 {
-  background: #121212;
+  background: #4a4a4a;
+}
+
+.rts-dark .single-service-card-box-1 p {
+  color: #d4d4d4;
 }
 
 .rts-dark .single-service-card-box-1:hover {
